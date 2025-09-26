@@ -1,0 +1,44 @@
+/* 🔍 搜索栏样式 */
+.search-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px 40px 12px 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.2s;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.clear-search {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #999;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.clear-search:hover {
+  color: #333;
+}
+
+/* 深色主题适配 */
+.app.dark .search-input {
+  background: #3a3a3a;
+  border-color: #555;
+  color: #e0e0e0;
+}

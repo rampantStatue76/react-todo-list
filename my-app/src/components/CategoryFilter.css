@@ -1,0 +1,66 @@
+/* 🏷️ 分类筛选样式 */
+.category-filter {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.filter-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #555;
+}
+
+.category-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.category-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 20px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 0.85rem;
+}
+
+.category-btn:hover {
+  border-color: #3498db;
+  background: #f8f9fa;
+}
+
+.category-btn.active {
+  background: #3498db;
+  border-color: #3498db;
+  color: white;
+}
+
+.category-icon {
+  font-size: 1rem;
+}
+
+.category-label {
+  white-space: nowrap;
+}
+
+/* 深色主题适配 */
+.app.dark .filter-label {
+  color: #e0e0e0;
+}
+
+.app.dark .category-btn {
+  background: #3a3a3a;
+  border-color: #555;
+  color: #e0e0e0;
+}
+
+.app.dark .category-btn:hover {
+  background: #4a4a4a;
+  border-color: #3498db;
+}

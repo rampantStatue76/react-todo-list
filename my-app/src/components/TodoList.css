@@ -1,0 +1,21 @@
+/* 📋 待办事项列表样式 */
+.todo-list {
+  margin-bottom: 10px;
+}
+
+.todo-list.empty {
+  text-align: center;
+  padding: 40px 20px;
+  color: #999;
+  font-style: italic;
+}
+
+.todo-list.empty p {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+/* 深色主题适配 */
+.app.dark .todo-list.empty {
+  color: #ccc;
+}

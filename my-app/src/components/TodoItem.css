@@ -1,0 +1,212 @@
+/* ✅ 待办事项样式 */
+.todo-item {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  background: white;
+  transition: all 0.2s;
+  overflow: hidden;
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* 🎬 删除动画 */
+.todo-item.deleting {
+  animation: slideOutLeft 0.3s ease-in-out forwards;
+}
+
+@keyframes slideOutLeft {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+    max-height: 200px;
+    margin-bottom: 12px;
+    padding: 15px;
+  }
+  70% {
+    transform: translateX(-100%);
+    opacity: 0;
+    max-height: 200px;
+    margin-bottom: 12px;
+    padding: 15px;
+  }
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+    max-height: 0;
+    margin-bottom: 0;
+    padding: 0;
+  }
+}
+
+.todo-item:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-color: #3498db;
+}
+
+.todo-item.completed {
+  background: #f8f9fa;
+  opacity: 0.7;
+}
+
+.todo-item.overdue {
+  border-left: 4px solid #e74c3c;
+  background: #fdf2f2;
+}
+
+.todo-main-content {
+  display: flex;
+  align-items: flex-start;
+  padding: 15px;
+  gap: 12px;
+}
+
+.priority-indicator {
+  width: 8px;
+  height: 100%;
+  min-height: 40px;
+  border-radius: 2px;
+  margin-right: 8px;
+}
+
+.todo-checkbox {
+  margin-right: 8px;
+  transform: scale(1.2);
+}
+
+.todo-content-area {
+  flex: 1;
+}
+
+.todo-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.todo-content {
+  font-size: 1rem;
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+.todo-item.completed .todo-content {
+  text-decoration: line-through;
+  color: #7f8c8d;
+}
+
+.edit-input {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid #3498db;
+  border-radius: 4px;
+  font-size: 1rem;
+  background: #fff;
+}
+
+.todo-meta {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.category-tag {
+  background: #3498db;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.due-date {
+  color: #666;
+  font-size: 0.8rem;
+}
+
+.due-date.overdue {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.created-time {
+  color: #999;
+  font-size: 0.75rem;
+}
+
+.todo-actions {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.details-btn,
+.edit-btn,
+.delete-btn {
+  padding: 6px 8px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+  font-size: 1rem;
+}
+
+.details-btn:hover,
+.edit-btn:hover {
+  background: #f8f9fa;
+}
+
+.delete-btn:hover {
+  background: #fee;
+  color: #e74c3c;
+}
+
+.todo-details {
+  padding: 15px;
+  background: #f8f9fa;
+  border-top: 1px solid #e9ecef;
+}
+
+.detail-row {
+  display: flex;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+.detail-row strong {
+  min-width: 80px;
+  color: #555;
+}
+
+/* 深色主题适配 */
+.app.dark .todo-item {
+  background: #3a3a3a;
+  border-color: #555;
+  color: #e0e0e0;
+}
+
+.app.dark .todo-item.overdue {
+  background: #4a2c2c;
+}
+
+.app.dark .edit-input {
+  background: #4a4a4a;
+  border-color: #3498db;
+  color: #e0e0e0;
+}
+
+.app.dark .todo-details {
+  background: #2a2a2a;
+  border-color: #555;
+}
+
+.app.dark .detail-row strong {
+  color: #ccc;
+}
+
+.app.dark .details-btn:hover,
+.app.dark .edit-btn:hover {
+  background: #4a4a4a;
+}
