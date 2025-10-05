@@ -1,0 +1,156 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "123456",
+      "email": "admin@example.com",
+      "name": "管理员",
+      "role": "admin",
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "2",
+      "username": "user1",
+      "password": "password123",
+      "email": "user1@example.com",
+      "name": "普通用户",
+      "role": "user",
+      "createdAt": "2024-01-02T00:00:00.000Z"
+    },
+    {
+      "id": "1759679855223",
+      "username": "subb",
+      "password": "123456",
+      "email": "3327307226@qq.com",
+      "name": "秦秦",
+      "role": "user",
+      "createdAt": "2025-10-05T15:57:35.223Z"
+    }
+  ],
+  "todos": [
+    {
+      "id": "1",
+      "content": "学习React",
+      "completed": false,
+      "priority": "high",
+      "category": "学习",
+      "dueDate": "2024-12-31",
+      "createdAt": "2024-01-01T10:00:00.000Z",
+      "updatedAt": "2024-01-01T10:00:00.000Z",
+      "tags": [
+        "前端",
+        "技术"
+      ],
+      "userId": 1
+    },
+    {
+      "id": "2",
+      "content": "完成项目报告",
+      "completed": true,
+      "priority": "medium",
+      "category": "工作",
+      "dueDate": "2024-01-15",
+      "createdAt": "2024-01-05T09:00:00.000Z",
+      "updatedAt": "2024-01-10T15:30:00.000Z",
+      "tags": [
+        "工作",
+        "文档"
+      ],
+      "userId": 1
+    }
+  ],
+  "sessions": [
+    {
+      "id": "1759661008729",
+      "userId": "1",
+      "token": "MTc1OTY2MTAwODcyOS45NjM0",
+      "createdAt": "2025-10-05T10:43:28.729Z",
+      "expiresAt": "2025-10-06T10:43:28.729Z"
+    },
+    {
+      "id": "1759661019165",
+      "userId": "2",
+      "token": "MTc1OTY2MTAxOTE2NS4yMDc",
+      "createdAt": "2025-10-05T10:43:39.165Z",
+      "expiresAt": "2025-10-06T10:43:39.165Z"
+    },
+    {
+      "id": "1759671270221",
+      "userId": "1",
+      "token": "MTc1OTY3MTI3MDIyMS4xNTY1",
+      "createdAt": "2025-10-05T13:34:30.223Z",
+      "expiresAt": "2025-10-06T13:34:30.223Z"
+    },
+    {
+      "id": "1759671353720",
+      "userId": "1",
+      "token": "MTc1OTY3MTM1MzcyMC40MzY4",
+      "createdAt": "2025-10-05T13:35:53.720Z",
+      "expiresAt": "2025-10-06T13:35:53.720Z"
+    },
+    {
+      "id": "1759673412299",
+      "userId": "1",
+      "token": "MTc1OTY3MzQxMjI5OS45MDE",
+      "createdAt": "2025-10-05T14:10:12.299Z",
+      "expiresAt": "2025-10-06T14:10:12.299Z"
+    },
+    {
+      "id": "1759674926554",
+      "userId": "1",
+      "token": "MTc1OTY3NDkyNjU1NC4yMjY4",
+      "createdAt": "2025-10-05T14:35:26.554Z",
+      "expiresAt": "2025-10-06T14:35:26.554Z"
+    },
+    {
+      "id": "1759679816311",
+      "userId": "2",
+      "token": "MTc1OTY3OTgxNjMxMS4zMTMy",
+      "createdAt": "2025-10-05T15:56:56.314Z",
+      "expiresAt": "2025-10-06T15:56:56.314Z"
+    },
+    {
+      "id": "1759679917079",
+      "userId": "1",
+      "token": "MTc1OTY3OTkxNzA3OS42NTk3",
+      "createdAt": "2025-10-05T15:58:37.079Z",
+      "expiresAt": "2025-10-06T15:58:37.079Z"
+    },
+    {
+      "id": 1759681758027,
+      "userId": "1",
+      "token": "MTc1OTY4MTc1ODAyNy4xNDM2",
+      "createdAt": "2025-10-05T16:29:18.027Z",
+      "expiresAt": "2025-10-06T16:29:18.027Z"
+    },
+    {
+      "id": 1759681773701,
+      "userId": "1",
+      "token": "MTc1OTY4MTc3MzcwMS40MjA3",
+      "createdAt": "2025-10-05T16:29:33.701Z",
+      "expiresAt": "2025-10-06T16:29:33.701Z"
+    },
+    {
+      "id": 1759681781878,
+      "userId": "2",
+      "token": "MTc1OTY4MTc4MTg3OC42ODY1",
+      "createdAt": "2025-10-05T16:29:41.878Z",
+      "expiresAt": "2025-10-06T16:29:41.878Z"
+    },
+    {
+      "id": 1759681922642,
+      "userId": "2",
+      "token": "MTc1OTY4MTkyMjY0Mi45ODYz",
+      "createdAt": "2025-10-05T16:32:02.642Z",
+      "expiresAt": "2025-10-06T16:32:02.642Z"
+    },
+    {
+      "id": 1759682518298,
+      "userId": "1",
+      "token": "MTc1OTY4MjUxODI5OC4xMzY",
+      "createdAt": "2025-10-05T16:41:58.298Z",
+      "expiresAt": "2025-10-06T16:41:58.298Z"
+    }
+  ]
+}

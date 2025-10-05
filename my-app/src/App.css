@@ -162,14 +162,18 @@
 }
 
 /* 📱 头部样式 */
+.header-content {
+  display: flex;
+  justify-content: space-between;
+}
 .app-header {
   text-align: center;
   margin: 20px 20px 0 20px;
-  position: relative;
 }
-
-.header-content {
-  position: relative;
+.header-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
 }
 
 .app-header h1 {
@@ -180,9 +184,6 @@
 }
 
 .theme-toggle {
-  position: absolute;
-  top: 0;
-  right: 0;
   background: none;
   border: 2px solid #ddd;
   border-radius: 50%;
@@ -197,6 +198,70 @@
   border-color: #3498db;
   background: #f8f9fa;
   transform: scale(1.05);
+}
+
+/* 加载状态样式 */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.loading-spinner {
+  font-size: 3rem;
+  animation: spin 2s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.loading-container p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+/* 头部操作区域样式更新 */
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-actions span {
+  color: #666;
+  font-size: 14px;
+}
+
+.logout-btn {
+  padding: 8px 16px;
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #ff5252;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
 }
 
 /* 🔘 过滤按钮样式 */
